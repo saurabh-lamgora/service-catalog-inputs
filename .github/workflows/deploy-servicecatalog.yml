@@ -22,8 +22,8 @@ env:
       AWS_REGION: eu-central-1
       PORTFOLIO_NAME: "${{ github.event.inputs.portfolio_name }}"
       PRODUCT_NAME: "${{ github.event.inputs.product_name }}"
-      PRODUCT_TEMPLATE_FILE: templates/"${{ github.event.inputs.template_file_name }}"
-      S3_BUCKET_PATH: skf-service-catalog-templates/"${{ github.event.inputs.s3_bucket_folder_name }}"
+      PRODUCT_TEMPLATE_FILE: templates/${{ github.event.inputs.template_file_name }}
+      S3_BUCKET_PATH: skf-service-catalog-templates/${{ github.event.inputs.s3_bucket_folder_name }}
 
 permissions:
   id-token: write   # This is required for requesting the JWT
